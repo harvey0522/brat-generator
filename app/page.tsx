@@ -20,12 +20,14 @@ export default function Home() {
     if (element) {
       html2canvas(element).then((canvas) => {
         canvas.toBlob((blob) => {
+          if (blob) {
           const url = URL.createObjectURL(blob);
           const link = document.createElement('a');
           link.href = url;
           link.download = 'bratCover.jpg';
           link.click();
           URL.revokeObjectURL(url);
+          }
         }, 'image/png');
       }); 
       
