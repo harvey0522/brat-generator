@@ -64,6 +64,9 @@
     font-size: 48px; /* 设置字体大小 */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     filter: blur(2px); /* 添加字体模糊效果 */
+    align-items: center;
+    justify-content: center; /* 水平和垂直居中内容 */
+    text-align: center; /* 文本居中 */
   }
 
   .buttonContainer {
@@ -71,4 +74,14 @@
     justify-content: center;
     margin-bottom: 40px; /* 增加按钮和输出文本之间的间距 */
   }
-  
+  .logo {
+    width: 100px; /* 设置logo宽度 */
+    height: auto; /* 保持宽高比 */
+    margin-bottom: 20px; /* 设置logo与其他元素的间距 */
+  }
+
+  .title {
+    font-size: 48px; /* 设置字体大小 */
+    font-weight: bold; /* 设置字体加粗 */
+    margin-bottom: 20px; /* 设置标题与其他元素的间距 */
+  }

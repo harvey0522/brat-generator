@@ -3,6 +3,7 @@
 import { useState, useRef, ChangeEvent } from 'react';
 import html2canvas from 'html2canvas';
 import styles from '../styles/Home.module.css';
+import Head from 'next/head';
 
 export default function Home() {
   const [inputText, setInputText] = useState('');
@@ -36,16 +37,22 @@ export default function Home() {
 
 
   return (
-    <div className={styles.container}>
-      <h1>Brat Generator</h1>
-      <textarea
-        className={styles.textarea}
-        placeholder="please input text..."
-        value={inputText}
-        onChange={handleInputChange}
-      ></textarea>
-      <button className={styles.button} onClick={generateAndDownloadImage}>Download Image</button>
-      <div className={styles.outputText}  ref={outputRef} >{outputText}</div>
-    </div>
+    <>
+      <Head>
+          <link rel="canonical" href="https://fridayblessings.me/" />
+      </Head>
+      <div className={styles.container}>
+        <h1 className={styles.title}>Brat Generator Image</h1>
+        <img src="../brat-generator.jpeg" alt="Brat-Generator-Logo" className={styles.logo} />
+        <textarea
+          className={styles.textarea}
+          placeholder="please input text..."
+          value={inputText}
+          onChange={handleInputChange}
+        ></textarea>
+        <button className={styles.button} onClick={generateAndDownloadImage}>Download Brat Image</button>
+        <div className={styles.outputText}  ref={outputRef} >{outputText}</div>
+      </div>
+    </>
   );
 }
