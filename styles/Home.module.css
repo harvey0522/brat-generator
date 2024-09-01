@@ -1,3 +1,4 @@
+
 .container {
     font-family: 'Roboto', sans-serif; /* 使用Roboto字体 */
     background-color: #f4f4f4;
@@ -43,7 +44,7 @@
 
   .textarea {
     width: 600px; /* 设置宽度 */
-    height: 600px; /* 设置高度，使其成为正方形 */
+    height: 200px; /* 设置高度，使其成为正方形 */
     margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -62,11 +63,14 @@
     height: 600px; /* 设置高度，使其成为正方形 */
     display: flex;
     font-size: 48px; /* 设置字体大小 */
+    word-break: break-word; /* 自动换行 */
+    white-space: pre-wrap; /* 保留空白符并换行 */
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    filter: blur(2px); /* 添加字体模糊效果 */
+    filter: blur(1.5px); /* 添加字体模糊效果 */
     align-items: center;
     justify-content: center; /* 水平和垂直居中内容 */
     text-align: center; /* 文本居中 */
+    letter-spacing: 0.1rem; /* 添加字体间距 */
   }
 
   .buttonContainer {
@@ -84,4 +88,47 @@
     font-size: 48px; /* 设置字体大小 */
     font-weight: bold; /* 设置字体加粗 */
     margin-bottom: 20px; /* 设置标题与其他元素的间距 */
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 1rem;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navItem {
+    margin: 0 1rem;
+  }
+  
+  .navItem a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .navItem a:hover {
+    text-decoration: underline;
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer a {
+    color: #61dafb;
+    text-decoration: none;
   }
