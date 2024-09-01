@@ -40,10 +40,11 @@ export default function Home() {
     <>
       <Head>
           <link rel="canonical" href="https://fridayblessings.me/" />
+          <link rel="icon" href="/brat-generator.jpeg" type="image/jpeg" />
       </Head>
       <div className={styles.container}>
         <h1 className={styles.title}>Brat Generator Image</h1>
-        <img src="../brat-generator.jpeg" alt="Brat-Generator-Logo" className={styles.logo} />
+        <img src="/brat-generator.jpeg" alt="Brat-Generator-Logo" className={styles.logo} />
         <textarea
           className={styles.textarea}
           placeholder="please input text..."
