@@ -25,7 +25,7 @@ export default function Blog1() {
       <Head>
         <title>Latest News on Charli XCX</title>
       </Head>
-      <nav className={styles.navbar}>
+      <nav className={styles.navbar}> 
         <ul className={styles.navList}>
           <li className={styles.navItem}><a href="/">Homepage</a></li>
           <li className={styles.navItem}><a href="/blog">Blog</a></li>
