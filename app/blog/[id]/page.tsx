@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from '../blog.module.css';
+import styles from '../../../styles/blog.module.css';
 
 export default function Blog() {
   return (

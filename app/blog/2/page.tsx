@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import ReactMarkdown from 'react-markdown';
-import styles from '../blog.module.css';
+import styles from '../../../styles/blog.module.css';
 
 const markdown = `
 ![](https://sfile.chatglm.cn/testpath/5512c3eb-bff1-55b4-a5d6-215b76fd1bba_0.png?image_process=format,webp)
