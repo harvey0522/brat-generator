@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, ChangeEvent,useEffect} from 'react';
+import { useState, useRef, ChangeEvent} from 'react';
 import html2canvas from 'html2canvas';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
@@ -9,13 +9,6 @@ export default function Home() {
   const [inputText, setInputText] = useState('');
   const [outputText, setOutputText] = useState('');
   const outputRef = useRef(null);
-
-  useEffect(() => {
-    document.body.classList.add(styles.noScroll);
-    return () => {
-      document.body.classList.remove(styles.noScroll);
-    };
-  }, []);
 
   const handleInputChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(event.target.value);
@@ -64,12 +57,11 @@ export default function Home() {
           value={inputText}
           onChange={handleInputChange}
         ></textarea>
-        <button className={styles.button} onClick={generateAndDownloadImage}>Download Brat Image</button>
+        <button className={styles.button} onClick={generateAndDownloadImage}>Download Brat Image</button> 
         <div className={styles.outputText}  ref={outputRef} >{outputText}</div>
       </div>
-      <div></div>
-      <div>32323</div>
-
+      
+      
       <footer className={styles.footer}>
         <p>© 2024 Brat Generator. All rights reserved.</p>
         <p>Contact us at: <a href="mailto:harveybj2000@gmail.com">harveybj2000@gmail.com</a></p>
