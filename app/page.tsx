@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, ChangeEvent } from 'react';
 import html2canvas from 'html2canvas';
 import styles from '../styles/Home.module.css';
 
