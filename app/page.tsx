@@ -9,7 +9,7 @@ export default function Home() {
   const [outputText, setOutputText] = useState('');
   const outputRef = useRef(null);
 
-  const handleInputChange = (event) => {
+  const handleInputChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
     setInputText(event.target.value);
     setOutputText(event.target.value);
   };
@@ -18,7 +18,6 @@ export default function Home() {
     const element = outputRef.current;
     console.log(element)
     if (element) {
-      console.log('666')
       html2canvas(element).then((canvas) => {
         canvas.toBlob((blob) => {
           const url = URL.createObjectURL(blob);
