@@ -44,13 +44,13 @@ export default function Home() {
       </Head>
       <nav className={styles.navbar}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}><a href="/">Homepage</a></li>
-          <li className={styles.navItem}><a href="/blog">Blog</a></li>
+          <li className={styles.navItem}><a href="/">Free Tool</a></li>
+          <li className={styles.navItem}><a href="/blog">Free</a></li>
           <li className={styles.navItem}><a href="https://ko-fi.com/harvey888">Buy me a coffee</a></li>
         </ul>
       </nav>
       <div className={styles.container}>
-        <h1 className={styles.title}>Brat Generator Image</h1>
+        <h1 className={styles.title}>Free Brat Generator Image</h1>
         <textarea
           className={styles.textarea}
           placeholder="please input text..."

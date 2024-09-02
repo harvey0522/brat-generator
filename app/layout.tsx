@@ -6,8 +6,8 @@ import '../styles/globals.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Brat Generator Image And Download- Charli XCX",
-  description: "Brat Generator is an online tool that allows users to create custom images resembling the album cover of Brat by Charli XCX.",
+  title: "Free Brat Generator Image And Download- Charli XCX",
+  description: "Free Brat Generator is an online tool that allows users to create custom images resembling the album cover of Brat by Charli XCX.",
 };
 
 export default function RootLayout({
