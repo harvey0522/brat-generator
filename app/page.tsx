@@ -44,8 +44,8 @@ export default function Home() {
       </Head>
       <nav className={styles.navbar}>
         <ul className={styles.navList}>
-          <li className={styles.navItem}><a href="/">Free Tool</a></li>
-          <li className={styles.navItem}><a href="/blog">Free</a></li>
+          <li className={styles.navItem}><a href="/">Homepage</a></li>
+          <li className={styles.navItem}><a href="/blog">Blog</a></li>
           <li className={styles.navItem}><a href="https://ko-fi.com/harvey888">Buy me a coffee</a></li>
         </ul>
       </nav>
@@ -65,6 +65,7 @@ export default function Home() {
       <footer className={styles.footer}>
         <p>© 2024 Brat Generator. All rights reserved.</p>
         <p>Contact us at: <a href="mailto:harveybj2000@gmail.com">harveybj2000@gmail.com</a></p>
+        <a href="https://tap4.ai/" title="Tap4 AI Tools Directory">Tap4 AI Tools Diresctory</a>
       </footer>
     </>
   );
