@@ -60,8 +60,8 @@ export default function Home() {
         <button className={styles.button} onClick={generateAndDownloadImage}>Download Brat Image</button> 
         <div className={styles.outputText}  ref={outputRef} >{outputText}</div>
       </div>
-
-      <div className={styles.description}>
+      
+       <div className={styles.description}>
         <h2>About Brat Generator</h2>
         <p>The Brat Generator is a tool designed to help you create unique and personalized images with ease. Whether you are looking to generate images for social media, blogs, or personal projects, the Brat Generator offers a simple and intuitive interface to get the job done.</p>
         <h3>Frequently Asked Questions</h3>
@@ -72,7 +72,7 @@ export default function Home() {
           </li>
           <li>
             <strong>How do I use the Brat Generator?</strong>
-            <p>Simply enter your desired text into the input field, and click the "Download Brat Image" button to generate and download your custom image.</p>
+            <p>Simply enter your desired text into the input field, and click the &quot;Download Brat Image&quot; button to generate and download your custom image.</p>
           </li>
           <li>
             <strong>Is the Brat Generator free to use?</strong>
@@ -84,8 +84,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
-      
-      
+
       <footer className={styles.footer}>
         <div className={styles.footerContent}>
           <div className={styles.footerLinks}>
