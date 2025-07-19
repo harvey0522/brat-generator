@@ -90,7 +90,8 @@ export default function Home() {
           <div className={styles.footerLinks}>
             <h3>Friend Links</h3>
             <ul>
-              <li><a href="https://tap4.ai" target="_blank" rel="noopener noreferrer">Tap4 AI</a></li>
+              <li><a href="https://inkgamescript.help/" target="_blank" rel="noopener noreferrer">ink game script</a></li>
+              <li><a href="https://grok4.art/" target="_blank" rel="noopener noreferrer">grok4</a></li>
             </ul>
           </div>
           <div className={styles.footerContact}>
